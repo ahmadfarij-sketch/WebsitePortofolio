@@ -1,0 +1,306 @@
+<!doctype html>
+<html lang="en">
+<head>
+ <head>
+  ...
+  <style>
+    /* ---- Efek Hover Skill ---- */
+    #skill .card img {
+      transition: 0.3s;
+    }
+    #skill .card:hover img {
+      transform: scale(1.1);
+    }
+    #skill .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+    }
+  </style>
+  <style>
+  .profile-img {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 50%;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.6); /* shadow tebal */
+    border: 4px solid white;
+  }
+</style>
+
+</head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+
+  <!-- Bootstrap Icons -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+<!-- AOS Animation CSS -->
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+<!-- Typewriter CSS -->
+<style>
+  .typing {
+    border-right: 3px solid white;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: caret 0.75s step-end infinite;
+  }
+  @keyframes caret {
+    50% { border-color: transparent; }
+  }
+  body{ background:#e6e6e6; }
+  .social-icons i:hover{ transform:scale(1.2); }
+</style>
+
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Portofolio | Ahmad Farij Qurbana</title>
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;700&display=swap" rel="stylesheet">
+
+  <style>
+    /* ===== Global ===== */
+    body {
+      background: #e6e6e6; /* Abu-abu */
+      font-family: 'Ubuntu', sans-serif;
+      scroll-behavior: smooth;
+    }
+    nav.navbar {
+      background-color: #212529 !important;
+    }
+    section {
+      padding: 100px 0;
+    }
+
+    /* ===== ANIMASI SCROLL ===== */
+    .fade-up {
+      opacity: 0;
+      transform: translateY(40px);
+      transition: all 0.8s ease-out;
+    }
+    .fade-up.show {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+
+    /* ===== BUTTON CUSTOM ===== */
+    .btn-custom1 {
+      background: #0d6efd;
+      color: white;
+      border-radius: 8px;
+    }
+    .btn-custom1:hover {
+      opacity: 0.8;
+    }
+
+    /* ===== CARD ===== */
+    .card-custom {
+      background: white;
+      border-radius: 15px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+  </style>
+
+</head>
+
+
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+  <div class="container">
+    <a class="navbar-brand fw-bold text-white" href="#">Web Portofolio</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse text-center" id="navbarNav">
+      <div class="navbar-nav ms-auto">
+        <a class="nav-link" href="#hero">HOME</a>
+        <a class="nav-link" href="#skill">SKILL</a>
+        <a class="nav-link" href="#about">ABOUT</a>
+        <a class="nav-link" href="#contact">CONTACT</a>
+      </div>
+    </div>
+  </div>
+</nav>
+
+
+
+<!-- HERO SECTION -->
+<section id="hero" class="fade-up">
+  <div class="container mt-5 pt-5">
+    <div class="row align-items-center">
+
+      <!-- TEKS -->
+      <div class="col-md-6">
+        <h2>Hallo,</h2>
+        <h1 class="fw-bold" id="typing-text"></h1>
+        <p class="mt-3">Mahasiswa Sistem Informasi & Tech Enthusiast</p>
+        <button class="btn btn-custom1 mt-3">Let's Talk</button>
+
+        <!-- SOSIAL MEDIA -->
+        <div class="social-icons mt-4">
+          <a href="https://instagram.com/ahmadfariij" target="_blank" class="me-3"><i class="fab fa-instagram"></i></a>
+          <a href="https://www.tiktok.com/@anotherrij" target="_blank" class="me-3"><i class="fab fa-tiktok"></i></a>
+          <a href="https://wa.me/6282123026309" target="_blank" class="me-3"><i class="fab fa-whatsapp"></i></a>
+          <a href="https://github.com/ahmadfarij-sketch" target="_blank"><i class="fab fa-github"></i></a>
+        </div>
+      </div>
+
+      <!-- FOTO PROFIL -->
+      <div class="col-md-6 text-center">
+        <img src="img/profile.png" class="profile-img" alt="Foto Profil">
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+
+
+<!-- ABOUT SECTION -->
+<section id="about" class="fade-up">
+  <div class="container">
+    <h1 class="text-center fw-bold">About Me</h1>
+    <hr>
+    <p class="text-center mt-3">
+      “Teknologi mengubah cara kita bekerja, berpikir, dan berkolaborasi”
+    </p>
+    <p class="text-center mt-3">
+      <p>
+        Saya <b>Ahmad Farij Qurbana</b>, mahasiswa aktif Program Studi <b>Sistem Informasi</b> di 
+        <b>Universitas Pamulang Kampus Serang</b>. Saat ini saya juga bekerja di 
+        <b>MAN 2 Kota Serang</b> pada bagian Koperasi dengan tanggung jawab pengelolaan data,
+        administrasi, dan pelayanan siswa.
+      </p>
+      <p>
+        Ketertarikan saya pada dunia teknologi mendorong saya untuk terus belajar,
+        khususnya di bidang <b>UI/UX, Front-End Web Development</b>, dan pemanfaatan aplikasi
+        digital produktivitas seperti <b>Figma, Canva, dan Visual Studio Code</b>. Saya senang 
+        mengeksplorasi bagaimana teknologi dapat membantu sebuah proses menjadi lebih rapi,
+        efektif, dan mudah digunakan.
+      </p>
+      <p>
+        Saya memiliki karakter yang cepat beradaptasi, mampu bekerja secara individu maupun 
+        sebagai bagian dari tim, dan selalu berusaha mengembangkan diri seiring dengan perkembangan
+        teknologi. Ke depannya, saya ingin berkontribusi dalam pengembangan produk digital yang 
+        berdampak dan memberikan pengalaman terbaik bagi penggunanya.
+      </p>
+  </div>
+</section>
+
+
+
+<!-- SKILL SECTION -->
+<section id="skill" data-aos="fade-up">
+  <div class="container">
+    <h1 class="text-center fw-bold">Skill</h1>
+    <hr>
+    <div class="row mt-5 text-center">
+
+      <!-- HARD SKILLS -->
+      <div class="col-md-4 mb-4">
+        <div class="card card-custom p-4">
+          <img src="https://cdn-icons-png.flaticon.com/512/919/919827.png" width="80" class="mb-3">
+          <h4 class="fw-bold mb-3">Hard Skills</h4>
+          <p><img src="https://cdn-icons-png.flaticon.com/512/919/919827.png" width="20"> HTML & CSS</p>
+          <p><img src="https://cdn-icons-png.flaticon.com/512/5968/5968705.png" width="20"> Figma (UI/UX)</p>
+        </div>
+      </div>
+
+      <!-- SOFT SKILLS -->
+      <div class="col-md-4 mb-4">
+        <div class="card card-custom p-4">
+          <img src="https://cdn-icons-png.flaticon.com/512/950/950605.png" width="80" class="mb-3">
+          <h4 class="fw-bold mb-3">Soft Skills</h4>
+          <p><img src="https://cdn-icons-png.flaticon.com/512/950/950605.png" width="20"> Teamwork & Komunikasi</p>
+          <p><img src="https://cdn-icons-png.flaticon.com/512/4287/4287725.png" width="20"> Time Management</p>
+        </div>
+      </div>
+
+      <!-- TOOLS -->
+      <div class="col-md-4 mb-4">
+        <div class="card card-custom p-4">
+          <img src="https://cdn-icons-png.flaticon.com/512/906/906324.png" width="80" class="mb-3">
+          <h4 class="fw-bold mb-3">Tools</h4>
+          <p><img src="https://cdn-icons-png.flaticon.com/512/906/906324.png" width="20"> Canva & Figma</p>
+          <p><img src="https://cdn-icons-png.flaticon.com/512/906/906324.png" width="20"> Visual Studio Code</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+
+
+
+<!-- CONTACT SECTION -->
+<section id="contact" class="fade-up">
+  <div class="container">
+    <h1 class="text-center fw-bold">Contact Me</h1>
+    <hr>
+    <form class="mt-5 col-md-6 mx-auto">
+      <input type="text" class="form-control mb-3" placeholder="Nama">
+      <input type="email" class="form-control mb-3" placeholder="Email">
+      <textarea class="form-control mb-3" placeholder="Pesan"></textarea>
+      <button class="btn btn-custom1 w-100">Kirim</button>
+    </form>
+  </div>
+</section>
+
+
+
+<!-- SCRIPT ANIMASI -->
+<script>
+  const elements = document.querySelectorAll('.fade-up');
+  const reveal = () => {
+    elements.forEach(el => {
+      const top = el.getBoundingClientRect().top;
+      if(top < window.innerHeight - 100){
+        el.classList.add('show');
+      }
+    });
+  }
+  window.addEventListener('scroll', reveal);
+  reveal();
+</script>
+
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- AOS Animation Script -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init({ duration: 900, once: true });
+</script>
+
+<!-- Typewriter Effect -->
+<script>
+let text = "I Am Ahmad Farij Qurbana";
+let i = 0;
+function typing(){
+  if(i < text.length){
+    document.getElementById("typing-text").textContent += text.charAt(i);
+    i++;
+    setTimeout(typing, 120);
+  }
+}
+document.getElementById("typing-text").textContent = "";
+typing();
+</script>
+
+
+</body>
+</html>
